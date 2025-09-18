@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Student Management System</h1>
+
+  <div class="controls">
+    <button onclick="getAllStudents()">Get All Students</button>
+    <a href="add-student.html">
+      <button>Add New Student</button>
+    </a>
+  </div>
+
+  <div class="search-box">
+    <input type="text" id="deptInput" placeholder="Enter Department">
+    <button onclick="getByDepartment()">Search by Department</button>
+
+    <input type="text" id="nameInput" placeholder="Enter Name">
+    <button onclick="getByName()">Search by Name</button>
+  </div>
+
+  <table id="studentsTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Email</th>
+        <th>Admission Year</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="app.js"></script>
+</body>
+</html>
